@@ -1,0 +1,17 @@
+backend:
+    path: ./
+    language:
+        name: python
+        packageManager: pip
+    functions:
+        - name: coldStartTest
+          path: ./
+          entry: coldStartTest.py
+          handler: lambda_handler
+        - name: coldStartTestChild
+          path: ./
+          entry: coldStartTestChild.py
+          handler: lambda_handler
+name: performance-tests-py
+region: eu-central-1
+yamlVersion: 2
