@@ -6,7 +6,8 @@ def lambda_handler(event):
     print('START')
     start_time = time.time()
     
-    response = requests.get(os.environ['GENEZIO_CHILD_URL'])
+    response = requests.get('https://b58073ee-f2a6-4282-8c57-6d29d6eed81e.eu-central-1.cloud.genez.io')
+    #os.environ['GENEZIO_CHILD_URL'])
     fetch_time = int((time.time() - start_time) * 1000)  # milliseconds
 
     if not response.ok:
