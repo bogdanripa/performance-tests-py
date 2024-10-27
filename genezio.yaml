@@ -4,10 +4,6 @@ backend:
         name: python
         packageManager: pip
     functions:
-        - name: coldStartTest
-          path: ./
-          entry: coldStartTest.py
-          handler: lambda_handler
         - name: coldStartTestChild
           path: ./
           entry: coldStartTestChild.py
